@@ -33,8 +33,21 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
 
+        // Pseudocode
+          // Define vowels grouping: aeiou
+          // Use .includes to check if first letter is included in the vowels grouping
+            // Output: use .concat() to add "way" to the end
+
+
+
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord
+      const vowels = "aeiouAEIOU"
+
+      if (vowels.includes(eachWord[0])){
+      return eachWord.concat("way")
+      } else {
+        return eachWord
+      }
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
